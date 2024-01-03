@@ -1,0 +1,61 @@
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Sound Icon" clip-path="url(#clip0_30_90)">
+<g id="Vector" filter="url(#filter0_d_30_90)">
+<path d="M22.281 38.2415C21.5519 34.0166 22.3265 29.6698 24.4702 25.9569C26.6138 22.2439 29.9909 19.3997 34.0144 17.9187" stroke="#F1F1F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
+</g>
+<g id="Vector_2" filter="url(#filter1_d_30_90)">
+<path d="M14.1737 40.4504C12.8909 34.0856 13.9743 27.4713 17.2207 21.8484C20.4671 16.2254 25.6535 11.98 31.807 9.90859" stroke="#F1F1F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
+</g>
+<g id="Vector_3" filter="url(#filter2_d_30_90)">
+<path d="M30.3611 36.113C30.1661 34.0466 30.6188 31.9708 31.6566 30.1733C32.6944 28.3759 34.2657 26.9458 36.1528 26.0816" stroke="#F1F1F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
+</g>
+<g id="Vector_4" filter="url(#filter3_d_30_90)">
+<path d="M38.8675 34.3462L38.8758 34.3317" stroke="#F1F1F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_30_90" x="17.0139" y="16.9185" width="22.0007" height="30.3232" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_90"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_90" result="shape"/>
+</filter>
+<filter id="filter1_d_30_90" x="8.64798" y="8.90833" width="28.1593" height="40.5423" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_90"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_90" result="shape"/>
+</filter>
+<filter id="filter2_d_30_90" x="25.3168" y="25.0813" width="15.8362" height="20.0318" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_90"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_90" result="shape"/>
+</filter>
+<filter id="filter3_d_30_90" x="33.8673" y="33.3316" width="10.0087" height="10.0147" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_30_90"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_30_90" result="shape"/>
+</filter>
+<clipPath id="clip0_30_90">
+<rect width="40" height="40" fill="white" transform="translate(0 35) rotate(-60)"/>
+</clipPath>
+</defs>
+</svg>
