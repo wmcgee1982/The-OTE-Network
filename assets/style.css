@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 .landingPage-logo {
@@ -104,7 +104,7 @@ body {
 .landingPage-buildingGif {
     display: flex;
     justify-content: center;
-    margin: -8rem 0rem -4rem 0rem;
+    margin: -7rem 0rem -4rem 0rem;
     z-index: 1;
 }
 
@@ -125,7 +125,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     column-gap: 4rem;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .userChoice-square {
@@ -151,6 +151,7 @@ body {
     filter: brightness(1);
     text-decoration: underline 1px dashed;
     text-underline-offset: 8px;
+    color: var(--yellow);
 }
 
 .userChoice-square:hover {
