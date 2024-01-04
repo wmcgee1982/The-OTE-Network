@@ -7,292 +7,50 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+    
     <title>The OTE Network</title>
 </head>
 
-<body>
+<body class="landingpage-background">
+    <main>
 
-    <!-- **** Top Nav **** -->
-    <nav>
-        <div class="logoGrid">
-            <img style="width: 250px; height: auto;" src="./assets/media/tempLogo.png" />
-        </div>
-
-        <div class="titleGrid">
-            <div class="titleText">
-                <h2>The OTE Network</h2>
+        <!-- **** Landing page logo **** -->
+        <section class="landingPage-container">
+            <a href="#options">
+            <div class="landingPage-logo">
+                <img style="width: 250px; height: auto;" src="./assets/media/tempLogo.png"/>
+            </div>
+            
+            <div class="landingPage-buildingGif">
+                <img style="filter: drop-shadow(1px 1px 1px white);" src="./assets/media/giphy.gif">
+            </div>
+            
+            <div class="landingPage-tag">
                 <p>Igniting networks, strengthening communitites</p>
             </div>
-        </div>
-
-        <div class="searchGrid">
-            <div class="searchText">
-                <h6>Search</h6>
-                <div class=searchIcon>
-                    <img src="./assets/media/eyesSearchIcon.svg">
-                </div>
-            </div>      
-        </div>
-    </nav>
-
-    <!-- Flexbox Menu -->
-    <div id="wave-menu" class="page-wave-menu">
-        <svg class="page-wave-svg-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-            <path class="page-wave-path-menu" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-        </svg></div>
-    <div class="menuFlexbox">
-        <div class="menuItemCurrent">
-            <div class="menuSquare" style="background-color: #4ee3d6;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/homeIcon.png">
-            </div>OTE Network Home
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #018499;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/governanceIcon.png">
-            </div>Governance
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #b9d08d;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/membersIcon.png">
-            </div>People
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #fcc904;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/whatWeDoIcon.png">
-            </div>What We Do
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #e34e5c;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/marketingIcon.png">
-            </div>Comms and Marketing
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #ff9ed2;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/fundingIcon.png">
-            </div>Funding
-        </div>    
-    </div>
-    
-    <main>    
-        <!-- **** Information Panel **** -->
-        <section class="informationPanel">
-
-            <!-- **** Side Menu **** -->
-            <aside class="sideMenuPanel">
-                <h5>Useful Links</h5>
-                <ul>
-                    <li>Governance</li>
-                    <li>People</li>
-                    <li>What We Do</li>
-                    <li>Comms and Marketing</li>
-                    <li>Funding</li>
-                </ul>
-
-                <div class="advertPanel">
-                    <h5>Exeter Resources</h5>
-                    <div id="exeterPride" class="advertCards">
-                        <a href="https://www.exeterpride.co.uk/">
-                            <img src="./assets/media/exeterPrideLogo.png">
-                            <p><b>Exeter Pride</b> - Exeter's annual pride community event. Contact them to get involved.</p>
-                        </a>
-                    </div>
-    
-
-                    <div id="intercomTrust" class="advertCards">
-                        <a href="https://www.intercomtrust.org.uk/">
-                            <img src="./assets/media/intercomTrustLogojpg.jpg">
-                            <p><b>Intercom Trust</b> - an LGBT community resource providing support with homophobic and transphobic prejudice, crime and discrimination in the South West.</p>
-                        </a>
-                        </div>
-
-                    <div id="transSouthWestPride" class="advertCards">
-                        <a href="http://tpsw.co.uk/">
-                            <img src="./assets/media/transPrideSouthWestLogo.jpg">
-                            <p><b>Trans Pride South West</b> A team of trans / non-binary people, working together with the LGBTQI+ community to bring events, talks, socials and resources in the South West.</p>
-                        </a>
-                    </div>
-                </div>
-            </aside>
-
-            <!-- **** Main Information Panel **** -->
-            <article class="mainInfoPanel">
-                <div class="WelcomeText">
-                    <p>We are excited to share with you this digital space, where members can find the information needed to be able to contribute to the charity.</p>
-                    <p>Transparency and collaboration are essential for the success of the charity, and so we are committed to sharing with you charity progress, in a timely manner via the <span>Out There Exeter</span> intranet, so that we can work together to achieve our common goals.</p>
-                    <p><b>Here are just a few of the things you can do on the intranet:</b></br>
-                        <ul>
-                            <li>Access important documents and resources, such as the governance, policies, and branding materials.</li>
-                            <li>Find out about meetings and committee groups, and access meeting minutes.</li>
-                            <li>Stay up-to-date on the latest and related LGBTQIA+ news and events.</li>
-                        </ul>
-                    </p>
-                    <p>We encourage you to explore the <span>Out There Exeter</span> intranet space and start using it to make your work as a committee member easier, efficient and effective.</p>
-                </div>
-
-                <div class="infoCards" style="background-color: #ff99cf;">
-                    <p>We are now <b>20+ Associates</b> coming together as one. Welcome to our ever-expanding family at <span>Out There Exeter</span></p>
-                </div>
-
-                <div class="infoCards" style="background-color: #b9d08d;">
-                    <p>Do you want to help drive the direction of <span>Out There Exeter</span>, become a <b>full member</b> today. Spark change, download the application form and join the cause.</p>
-                </div>
-
-                <div class="infoCards" style="background-color: #018499;">
-                    <p style="color: #F1F1F1;">We now have a new email address. You can contact us by emailing
-                        <a href="mailto:info@out-there-exeter.com">info@out-there-exeter.com</a>.</p>
-                </div>
-            </article>
-
-            <!-- **** Charity News Updates **** -->
-            <aside class="newsPanel">
-                <h3>OTE Latest News</h3>
-
-                <!-- **** News Items 1 **** -->
-                <div class="newsPanelCard">
-                    <div class="newsPanelCardTopLine">
-                        <div class="newsPanelCardTopLineImage">
-                            <img style="height: 50px; width: 50px; border-radius: 50%;" src="./assets/media/tempLogo.png">
-                        </div>
-                        <div class="newsPanelCardTopLineName">
-                            <p><b style="font-size: 12px;">Out There Exeter</b> posted</p>
-                        </div>
-                        <div class="newsPanelCardTopLineTime">
-                            <p>03 Jan 24</p>
-                        </div>
-                    </div>
-                    <div class="newsPanelCardContent">
-                        <p>The next general meeting is <b>Wednesday, 31st January 2024 at 1900 hrs - online</b>. The link will be available here and sent out by email soon. For all previous meetings and minutes, click here.</p>
-                    </div>
-                </div>
-
-                <!-- **** News Items 2 **** -->
-                <div class="newsPanelCard">
-                    <div class="newsPanelCardTopLine">
-                        <div class="newsPanelCardTopLineImage">
-                            <img style="height: 50px; width: 50px; border-radius: 50%;" src="./assets/media/tempLogo.png">
-                        </div>
-                        <div class="newsPanelCardTopLineName">
-                            <p><b style="font-size: 12px;">Out There Exeter</b> posted</p>
-                        </div>
-                        <div class="newsPanelCardTopLineTime"><p>20 Dec 23</p>
-                        </div>
-                    </div>
-                    <div class="newsPanelCardContent">
-                        <p>Great news! We've officially submitted our application for charity status! This marks a hugh milestone in our journey to make Out There Exeter a reality. 
-                            We know that securing charity status will open doors to greater resources and impact. 
-                            Over the coming months, we will remain dedicated to creating a brighter future for LGBTQI+ networks and communities in Exeter. 
-                            We patiently wait for the application review process. Stay tuned for updates!</p>
-                    </div>
-                </div>
-
-                <!-- **** News Items 3 **** -->
-                <div class="newsPanelCard">
-                    <div class="newsPanelCardTopLine">
-                        <div class="newsPanelCardTopLineImage">
-                            <img style="height: 50px; width: 50px; border-radius: 50%;" src="./assets/media/tempLogo.png">
-                        </div>
-                        <div class="newsPanelCardTopLineName">
-                            <p><b style="font-size: 12px;">Out There Exeter</b> posted</p>
-                        </div>
-                        <div class="newsPanelCardTopLineTime"><p>23 Oct 23</p>
-                        </div>
-                    </div>
-                    <div class="newsPanelCardContent">
-                        <p>The power of collaboration awaits! We have set-up the following committee groups:</p>
-                        <ul>
-                            <li>Strategy Partnership and Fundraising</li>
-                            <li>Event Management</li>
-                            <li>Marketing and Branding</li>
-                            <li>Out There Directory</li>
-                        </ul>
-                        <p>Dive into the new committee groups - your voice matters! To take part in any of the committee groups, please email <a href="mailto:info@out-there-exeter.com">info@out-there-exeter.com</a>.</p>
-                    </div>
-                </div>
-            </aside>
+        </a>
         </section>
 
-        <!-- **** Next Steps **** -->
-        <footer class="footer">
-            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-                <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-            </svg>
-        </footer> 
-        <section class="fullWidthInfo blueBKGCard">
-            <article id="nextSteps-Center-Container" class="container">
-                <div id="nextSteps-Content" class="card">
-                    <div class="cardTitleYellowBKG">
-                        <h4>Charity Next Steps</h4>
-                        
-                        <div class=microphoneIcon>
-                            <img style="height: 75px; width: 75px;" src="./assets/media/microphoneIcon.png">
-                        </div>
-                        <div class=soundIcon>
-                            <img style="height: 75px; width: 75px;" src="./assets/media/soundIcon.svg">
-                        </div>
-                    </div>
-                    <div id="nextSteps-Text">
-                        <p>Your invaluable feedback has played a pivotal role in shaping the foundations of the charity. We are currently dedicating time to crafting comprehensive policies and strategies, which we will present for your consideration at an upcoming general meeting.</p>
-                        <p>Our journey towards becoming a registered Charitable Incorporated Organisation (CIO) with the Charity Commission is nearing completion. We have crafted our charity governing document, agreed upon our charity's purpose, and submitted our application.</p>
-                        <p>Our committee leads are in place, and we are establishing our committee groups. These individuals and groups will play a crucial role in fostering strategic partnerships, securing essential funding, and bringing our vision for the 2024 festival to life.</p>
-                        <p><b>Our primary focus in the coming months will encompass:</b></p>
-                        <ul>
-                            <li>Finalising our charity's governance framework</li>
-                            <li>Develop branding</li>
-                            <li>Create a marketing strategy and a comms plan</li>
-                            <li>Embarking on fundraising efforts and planning for the September 2024 festival</li>
-                            <li>Developing a comprehensive directory</li>
-                        </ul>
-                        <p>We are committed to providing regular updates during general meetings as well as through email communication. If you have any additional input regarding updates, our next course of action, or are interested in joining our WhatsApp group or committee groups, kindly inform us by sending an email to <a href="mailto:info@out-there-exeter.com">info@out-there-exeter.com</a>.</p>
-                    </div> 
-                </div>
-            </article>
-        </section>
 
-        <!-- **** Grow the Charity **** -->  
-        <div id="wave" class="page-wave">
-            <svg class="page-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-                <path class="page-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-            </svg></div>
-        <section class="fullWidthInfo lightBKGCard">
-            <article id="growCharity-Center-Container" class="container">
-                <div id="growCharity-Content" class="card">
-                    <div class="cardTitlePositionRight">
-                        <div class="cardTitleBlueBKG"> 
-                            <h4>Grow Our Charity</h4>
-                            <div class=teamIcon>
-                                <img style="height: 100px; width: 100px;" src="./assets/media/teamIcon.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="growCharity-Text">
-                        <p>Do you know of anyone passionate about making a difference in Exeter's LGBTQIA+ community?</p>
-                        <p>We are continuing to look for new members to join us in our mission. We are excited to work with people who are passionate about the charity's cause and who are willing to give their time and talents to help us make difference.</p>
-                        <p><b>We are especially looking for people with the following skills:</b></p>
-                        <ul>
-                            <li>Fundraising</li>
-                            <li>Marketing and Communications</li>
-                            <li>Social Media Content Creators</li>
-                        </ul> 
-                        <p>As a member of the <span>Out There Exeter</span>, we have the opportunity to make a real difference to the lives of people in our community. Importantly, we get to network with like-minded peers, make new friends, and have fun!</p>
-                        <p>If you know of anyone who would be interested in joining us, please as them to email us at <a href="mailto:info@out-there-exeter.com">info@out-there-exeter.com</a>.</p>
-                    </div>
+        <section>
+            <div id="options" class="userChoice-container">
+                <div class="userChoice-square userChoice-square-left">
+                    <a href="/network-home.html">2024 Festival</a>   
                 </div>
-            </article>
+                <div class="userChoice-square userChoice-square-right">
+                    <a href="/network-home.html">Committee</a> 
+                </div>
+            </div>
         </section>
     </main>
-    
-    
+
+              
     <!-- **** Footer **** -->
-    <footer class="footer">
-        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-            <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-        </svg>
-        
+    <footer class="footer-lp">
         <div class="footer-content">
             <div class="card-body">
                 <h5 class="card-title">Out There Exeter</h5>
@@ -315,7 +73,6 @@
                 </svg>     
             </a>
 
-            
             <a class="footer-social-link tiktok" href="#" target="_blank">
                 <span class="hidden-link-text">TikTok</span>
                 <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
@@ -323,7 +80,6 @@
                 </svg>
             </a>
 
-            
             <a class="footer-social-link threads" href="#" target="_blank">
                 <span class="hidden-link-text">Threads</span>
                 <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
@@ -339,7 +95,7 @@
             </a>
         </div>
 
-        <div class="footer-copyright">
+        <div class="footer-copyright-lp">
             <div class="footer-copyright-wrapper">
                 <p class="footer-copyright-text">
                     <a class="footer-copyright-link" href="#" target="_self"> ©2024 | Designed By: Wayne McGee | All rights reserved</a>
@@ -347,6 +103,6 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
