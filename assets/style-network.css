@@ -1,0 +1,350 @@
+/* *** The OTE Network Page *** 
+*** *** 
+*** *** 
+*** *** */
+
+/* *** Menu Flexbox *** */
+.menuFlexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.menuSquare {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 10px -5px var(--darkGrey);
+    transition: 1s all;
+    border-radius: 5%;
+}
+
+.menuItem{
+    width: 100px;
+    font-size: 11px; 
+    font-weight: 600; 
+    letter-spacing: 0.15rem; 
+    color: var(--darkGrey); 
+    text-align: center;
+}
+
+.menuItemCurrent {
+    width: 100px;
+    font-size: 11px; 
+    font-weight: 600; 
+    letter-spacing: 0.15rem; 
+    color: var(--yellow); 
+    text-align: center;
+}
+
+.menuItem:hover 
+.menuSquare {
+    cursor: pointer;
+    transition: 0.3s all;
+    border-radius: 50%;
+    transition-delay: 0s;
+    rotate: 360deg;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    color: var(--softNavy); 
+}
+
+.menuItemCurrent:hover 
+.menuSquare {
+    cursor: pointer;
+    transition: 0.3s all;
+    border-radius: 50%;
+    transition-delay: 0s;
+    rotate: 360deg;
+}
+
+.menuItemCurrent:hover {
+    cursor: pointer;
+    color: var(--softNavy); 
+}
+
+
+/* *** *** Information Panel *** *** */
+.informationPanel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 4rem 0rem;
+}
+
+
+/* *** *** Side Menu Panel *** *** */
+.sideMenuPanel {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0.15;
+    border-right: solid 0.1rem var(--mediumGrey);
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+.sideMenuPanel h5 {
+    color: var(--softNavy);
+    margin-bottom: 0rem;
+}
+
+.sideMenuPanel ul {
+    list-style: none;
+    margin: 1rem 1rem 1rem -1rem;
+}
+
+.sideMenuPanel li {
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.sideMenuPanel ul :hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--softNavy);
+}
+
+
+/* *** *** Advert Panel *** *** */
+.advertPanel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.advertPanel p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1rem;
+    letter-spacing: 0.05rem;
+    padding: 0rem 0rem;
+}
+
+.advertPanel h5 {
+    padding: 1rem 0rem;
+    color: var(--softNavy);
+}
+
+.advertPanel img {
+    width: 100%;
+    height: 100%;
+}
+
+.advertPanel a {
+    text-decoration: none;
+}
+
+.advertPanel a:hover {
+    filter: none;
+    text-decoration: underline;
+}
+
+.advertCards {
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+
+/* *** *** Main Information Panel *** *** */
+.mainInfoPanel {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0.4;
+    margin-top: 0.1rem;
+}
+
+.welcomeText {
+    flex-flow: column nowrap;
+}
+
+.welcomeText ul {
+    font-style: italic;
+}
+
+
+/* *** *** Info Cards *** *** */
+.infoCards {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 0.2rem;
+    box-shadow: 5px 5px 10px -10px var(--darkGrey);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+}
+
+
+/* *** *** News Panel *** *** */
+.newsPanel {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0.35;
+}
+
+.newsPanel h3 {
+    padding: 1rem 0rem;
+    color: var(--softNavy);
+}
+
+/* *** *** News Items *** *** */
+.newsPanelCard {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 10px -10px var(--darkGrey);
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsPanelCard:hover {
+    filter: brightness(90%);
+    cursor: help;
+    transition-delay: 0.1s;
+}
+
+.newsPanelCard p {
+    font-size: 12px;
+    line-height: 1.2rem; 
+    font-weight: 300; 
+    letter-spacing: 1.2px;
+}
+
+.newsPanelCardTopLine {
+    display: flex;
+    width: 100%;
+}
+
+.newsPanelCardTopLine p {
+    color: var(--softNavy);
+}
+
+.newsPanelCardTopLineImage {
+    display: flex;
+    flex: 0.5;
+}
+
+.newsPanelCardTopLineName {
+    display: flex;
+    flex: 2;
+    margin-left: 0.5rem;
+}
+
+.newsPanelCardTopLineTime {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.newsPanelCardContent {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0rem;
+}
+
+.newsPanelCardContent li {
+    font-size: 12px;
+    line-height: 1.2rem; 
+    font-weight: 600; 
+    letter-spacing: 1.2px;
+}
+
+
+/* *** *** Full Width Info Section *** *** */
+.fullWidthInfo {
+    width: 100vw;
+}
+
+.card {
+    background-color: inherit;
+    border: none;
+    padding: 4rem 0rem 3rem 0rem;
+}
+
+.blueBKGCard {
+    background-color: var(--softNavy);
+}
+ 
+.blueBKGCard p  {
+    color: var(--lightGrey);
+}
+
+.blueBKGCard li,
+.blueBKGCard b {
+    color: var(--yellow);
+}
+
+.lightBKGCard {
+    background-color: var(--lightGrey);
+}
+ 
+.lightBKGCard p  {
+    color: var(--darkGrey);
+}
+
+.lightBKGCard li,
+.lightBKGCard b {
+    color: var(--softNavy);
+}
+
+.cardTitleYellowBKG {
+    position: relative;
+    width: 450px; 
+    height: 50px; 
+    background: var(--yellow); 
+    box-shadow: 1px 4px 15px 1px var(--darkGrey); 
+    border-radius: 50px; 
+    padding: 0.4rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.cardTitlePositionRight {
+    display: flex;
+    justify-content: end;
+}
+
+.cardTitleYellowBKG h4 {
+    color: var(--softNavy); 
+}
+
+.cardTitleBlueBKG {
+    position: relative;
+    width: 450px; 
+    height: 50px; 
+    background: var(--softNavy); 
+    box-shadow: 1px 4px 15px 1px var(--darkGrey); 
+    border-radius: 50px; 
+    padding: 0.4rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.cardTitleBlueBKG h4 {
+    color: var(--lightGrey); 
+    text-align: right;
+}
+
+.microphoneIcon {
+    left: 385px;  
+    top: -20px;
+    position: absolute;
+}
+
+.soundIcon {
+    left: 365px;
+    top: -35px;
+    position: absolute;
+}
+
+.teamIcon {
+    top: -21px;
+    position: absolute;
+    rotate: 10deg;
+}

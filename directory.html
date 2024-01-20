@@ -10,41 +10,73 @@
 
     <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
     <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+    
+    <script src="./toggle.js"></script>
+    
     <title>The OTE Network</title>
 </head>
 
 <body>
 
-    <!-- **** Top Nav **** -->
-    <nav>
-        <div class="logoGrid">
-            <a href="./index.html">
-                <img style="width: 250px; height: auto;" src="./assets/media/tempLogo.png" />
+
+<!-- **** Top Nav **** -->
+<nav>
+    <div class="nav-logo">
+        <a href="./index.html">
+            <img style="width: auto; height: auto;" src="./assets/media/tempLogo.png" />
+        </a>
+    </div>
+
+    <div class="nav-info">
+            <p><span>Queer Fest, September 2024</span></p>
+            <p>IGNITING NETWORKS, STRENGTHENING COMMUNITIES</p>
+    </div>
+
+    <div class="nav-search">
+        <div class="searchText">
+            <h6>Search</h6>
+            </div>
+            <div class=searchIcon>
+                <img src="./assets/media/eyesSearchIcon.svg">
+            </div>  
+    </div>
+         
+    <div class="nav-toggle-container">
+        <div class="togglenav">
+            <a href="#home" class="active"></a>
+            <!-- Toggle Nav links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="charity.html">The Charity</a>
+                <a href="festival.html">Queer Fest</a>
+                <a href="network-home.html">Committee</a>
+                <a href="directory.html">Directory</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-main fa-main-bars"></i>
             </a>
         </div>
+    </div>
 
-        <div class="titleGrid">
-            <div class="titleText">
-                <h2>The OTE Network</h2>
-                <p>Igniting networks, strengthening communitites</p>
-            </div>
-        </div>
+    <div class="nav-background">
+        <img height="100px" src="./assets/media/giphy45.gif">
+    </div>
+</nav>
 
-        <div class="searchGrid">
-            <div class="searchText">
-                <h6>Search</h6>
-                <div class=searchIcon>
-                    <img src="./assets/media/eyesSearchIcon.svg">
-                </div>
-            </div>      
-        </div>
-    </nav>
-
- 
-    
+<!-- **** Nav Wave **** --> 
+<div id="wave-menu-festpg" class="page-wave-menu">
+    <svg class="page-wave-svg-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="page-wave-path-menu" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+    </svg>
+</div>
     <main>
        
-
+        <div>TEST TEXT</br>
+            TEST TEXT</br>
+            TEST TEXT</br>
+            
+        </div>
     </main>
     
     

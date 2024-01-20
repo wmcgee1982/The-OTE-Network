@@ -1,0 +1,476 @@
+/* *** *** LANDING PAGE *** *** 
+*** *** 
+*** *** 
+*** *** */
+
+/* *** *** LANDING PAGE - background *** *** */
+.landingpage-background {
+    background-image: url(./media/giphy9.gif);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    cursor: none;
+}
+
+/* *** *** LANDING PAGE - 2nd background with cursor *** *** */
+.magic {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-image: url(./media/PhoenixRainbow.png); 
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+    z-index: -2;
+    opacity: 0.8;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    filter:invert(100%);
+    transition-delay: 0.90ms;
+}
+/*
+    animation-name: rotate, fadeIn;
+    animation-duration: 450ms, 600ms;
+    animation-timing-function: linear, ease;
+    animation-iteration-count: infinite, 1;
+    animation-delay: 400ms;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+
+/* *** *** LANDING PAGE - Nav Toggle *** *** */
+.fa1 {
+    display:inline-block;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.fa1-bars:before {
+    content: url("./media/toggleIcon.svg");
+}
+
+.fa1-bars:hover {
+    content: url("./media/toggleIcon1.svg");
+    filter: invert(1%);
+}
+
+
+
+/* *** *** LANDING PAGE - logo *** *** */
+.landingPage-logo-container a {
+    filter: brightness(1);
+    text-decoration: none;
+}
+
+.landingPage-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 10rem;
+}
+
+.landingPage-logo {
+    display: flex;
+    justify-content: center;
+    filter: invert(100%);
+}
+
+.landingPage-logo-tag {
+    display: flex;
+    justify-content: center;
+}
+
+.landingPage-logo-tag p {
+    color: var(--yellow);
+    font-size: 20px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--white);
+    padding: 1rem;
+}
+
+.landingPage-buildingGif {
+    display: flex;
+    justify-content: center;
+    margin: -7rem 0rem -4rem 0rem;
+    z-index: 1;
+}
+
+
+/* *** *** LANDING PAGE - arrow *** *** */
+.arrow-bounce {
+    position: fixed;
+    left: 49%;
+    bottom: 0px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 2rem;
+    -webkit-animation: bounce 1.5s infinite;
+    -moz-animation: bounce 1.5s infinite;
+    -o-animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  @-webkit-keyframes bounce {
+    0%       {bottom: 0px;}
+    50%      {bottom: 10px;}
+    100%     {bottom: 20;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       {bottom: 0px;}
+    50%      {bottom: 10px;}
+    100%     {bottom: 20;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       {bottom: 0px;}
+    50%      {bottom: 10px;}
+    100%     {bottom: 20;}
+  }
+  
+   @keyframes bounce {
+    0%       {bottom: 0px;}
+    50%      {bottom: 10px;}
+    100%     {bottom: 20;}
+  }
+
+
+
+/* *** *** LANDING PAGE - MENU half way down the page *** *** */
+#landingpage-scrollMenu {
+    margin: 20rem 0rem 5rem 0rem;
+}
+
+.landingpage-scrollMenu-itemContainer {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+/* *** *** LANDING PAGE - MENU CHARITY *** *** */
+.landingpage-scrollMenu-charity-leftside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 10%;
+    transition-duration: 1s;
+    justify-content: center;
+    align-items: center;
+    rotate: -4deg;
+}
+
+.landingpage-scrollMenu-charity-leftside a {    
+    font-size: 60px;
+    color: var(--yellow);
+    font-family: 'Comic Sans MS';
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-charity-leftside a:hover {
+    filter: brightness(1);
+    text-decoration: underline 1px dashed var(--softNavy);
+    text-underline-offset: 8px;
+    color: var(--pink);
+    }
+    
+body:has(.landingpage-scrollMenu-charity-leftside a:hover)
+.landingpage-scrollMenu-charity-rightside {
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-charity-rightside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 40%;
+    border: var(--pink) double 5px;
+    margin: 1rem 5rem 0rem 0rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./media/giphy14.gif);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    transition-duration: 0.5s;
+    opacity: 0;
+    rotate: 5deg;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+/* *** *** LANDING PAGE - MENU FESTIVAL 2023 *** *** */
+.landingpage-scrollMenu-festival-rightside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 10%;
+    transition-duration: 1s;
+    justify-content: center;
+    align-items: center;
+    rotate: 8deg;
+}
+
+.landingpage-scrollMenu-festival-rightside a {    
+    font-size: 60px;
+    color: var(--yellow);
+    font-family: 'Comic Sans MS';
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-festival-rightside a:hover {
+    filter: brightness(1);
+    text-decoration: underline 1px dashed var(--yellow);
+    text-underline-offset: 8px;
+    color: var(--red);
+    }
+    
+body:has(.landingpage-scrollMenu-festival-rightside a:hover)
+.landingpage-scrollMenu-festival-leftside {
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-festival-leftside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 40%;
+    margin-left: 4rem;
+    justify-content: right;
+    align-items: center;
+    background-image: url(./media/giphy3.gif);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -3.5rem;
+    background-size: 60%;
+    transition-duration: 1s;
+    opacity: 0;
+    rotate: -6deg;
+    filter: blur(2px);
+    clip-path:
+    polygon(68% -1%, 73% 3%, 75% 9%, 79% 13%, 82% 14%, 84% 15%, 90% 16%, 94% 17%, 97% 20%, 99% 91%, 94% 96%, 87% 97%, 9% 99%, 2% 95%, -1% 87%, -1% 9%, 2% 4%, 5% 1%, 68% -2%)
+}
+
+/* *** *** LANDING PAGE - MENU COMMITTEE *** *** */
+.landingpage-scrollMenu-committee-leftside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 10%;
+    transition-duration: 1s;
+    justify-content: end;
+    align-items: center;
+    rotate: -2deg;
+}
+
+.landingpage-scrollMenu-committee-leftside a {    
+    font-size: 60px;
+    color: var(--yellow);
+    font-family: 'Comic Sans MS';
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-committee-leftside a:hover {
+    filter: brightness(1);
+    text-decoration: underline 1px dashed var(--lightGrey);
+    text-underline-offset: 8px;
+    color: var(--offMint);
+    }
+    
+body:has(.landingpage-scrollMenu-committee-leftside a:hover)
+.landingpage-scrollMenu-committee-rightside {
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-committee-rightside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 30%;
+    margin: 3rem;
+    border: var(--offMint) solid 2px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./media/PhoenixRainbow.png);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -7rem;
+    opacity: 0;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 25px -5px rgb(255, 255, 255);
+    rotate: 8deg;
+    clip-path:
+    polygon(68% -1%, 73% 3%, 75% 9%, 79% 13%, 82% 14%, 84% 15%, 90% 16%, 94% 17%, 97% 20%, 99% 91%, 94% 96%, 87% 97%, 9% 99%, 2% 95%, -1% 87%, -1% 9%, 2% 4%, 5% 1%, 68% -2%)
+}
+
+/* *** *** LANDING PAGE - MENU DIRECTORY 2023 *** *** */
+.landingpage-scrollMenu-directory-rightside {
+    display: flex;
+    flex: 0.5;
+    height: 300px;
+    border-radius: 10%;
+    transition-duration: 1s;
+    justify-content: start;
+    align-items: center;
+    rotate: 8deg;
+}
+
+.landingpage-scrollMenu-directory-rightside a {    
+    font-size: 60px;
+    color: var(--yellow);
+    font-family: 'Comic Sans MS';
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-directory-rightside a:hover {
+    filter: brightness(1);
+    text-decoration: underline 1px dashed;
+    text-underline-offset: 8px;
+    color: var(--lightGrey);
+    }
+    
+body:has(.landingpage-scrollMenu-directory-rightside a:hover)
+.landingpage-scrollMenu-directory-leftside {
+    opacity: 1;
+}
+
+.landingpage-scrollMenu-directory-leftside {
+    display: flex;
+    flex: 0.5;
+    height: 400px;
+    margin-bottom: -50px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./media/giphy13.gif);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 50%; 
+    background-position: center;
+    transition-duration: 1s;
+    opacity: 0;
+    rotate: -10deg;
+}
+
+body:has(.landingpage-scrollMenu-charity-leftside:hover)
+ .landingpage-scrollMenu-festival-rightside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-charity-leftside:hover)
+ .landingpage-scrollMenu-committee-leftside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-charity-leftside:hover)
+ .landingpage-scrollMenu-directory-rightside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-festival-rightside:hover)
+ .landingpage-scrollMenu-charity-leftside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-festival-rightside:hover)
+ .landingpage-scrollMenu-committee-leftside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-festival-rightside:hover)
+ .landingpage-scrollMenu-directory-rightside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-committee-leftside:hover)
+ .landingpage-scrollMenu-festival-rightside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-committee-leftside:hover)
+.landingpage-scrollMenu-charity-leftside{
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-committee-leftside:hover)
+ .landingpage-scrollMenu-directory-rightside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-directory-rightside:hover)
+.landingpage-scrollMenu-charity-leftside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-directory-rightside:hover)
+ .landingpage-scrollMenu-committee-leftside {
+    opacity: 0;
+}
+
+body:has(.landingpage-scrollMenu-directory-rightside:hover)
+ .landingpage-scrollMenu-festival-rightside {
+    opacity: 0;
+}
+
+
+/* *** *** Footer Landing Page *** *** */
+.footer-lp {
+    background-color: transparent;
+}
+
+.footer-lp p  {
+    color: var(--lightGrey);
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+}
+
+.footer-lp h5  {
+    color: var(--yellow);
+}
+
+.footer-lp a {
+    text-decoration: none;
+}
+
+.footer-lp a:hover {
+    filter: none;
+}
+
+.btn-primary-lp {
+    color: var(--darkGrey);
+    background-color: var(--yellow);
+}
+
+.btn-primary-lp:hover {
+    color: var(--yellow);
+    background-color: var(--softNavy);
+    cursor: pointer;
+}
+
+/* *** *** Footer Copyright *** *** */
+.footer-copyright-lp {
+    color: var(--lightGrey);
+    padding: 15px 30px;
+    text-align: center;
+}
