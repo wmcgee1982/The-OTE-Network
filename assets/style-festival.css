@@ -1,9 +1,5 @@
-body-fest {
-    width: 100%; 
-    height: 100%; 
-    overflow-x: hidden;
+body {
     background: var(--yellow);
-    display: block !important;
 }
 
 /* *** *** Festtival Page - top section *** *** */

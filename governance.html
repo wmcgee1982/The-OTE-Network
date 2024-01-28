@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style-network.css">
+
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+    <script src="./js/toggle.js"></script>
+    
+    <title>The OTE Network</title>
+</head>
+
+<body>
+
+<!-- **** Top Nav **** -->
+<div include-html="./sections/network-nav.html"></div>
+
+<!-- **** Nav Wave **** --> 
+<div id="wave-menu-festpg" class="page-wave-menu">
+    <svg class="page-wave-svg-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="page-wave-path-menu" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+    </svg>
+</div>
+
+    <!-- Flexbox Menu -->
+    <div class="menuFlexbox">
+        <div class="menuItem">
+            <a href="./network-home.html">
+            <div class="menuSquare" style="background-color: #4ee3d6;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/homeIcon.png">
+            </div>OTE Network Home</a>
+        </div>
+
+        <div class="menuItemCurrent">
+            <a href="./governance.html">
+            <div class="menuSquare" style="background-color: #018499;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/governanceIcon.png">
+            </div>Governance</a>
+        </div>
+
+        <div class="menuItem">
+            <div class="menuSquare" style="background-color: #b9d08d;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/membersIcon.png">
+            </div>People
+        </div>
+
+        <div class="menuItem">
+            <div class="menuSquare" style="background-color: #fcc904;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/whatWeDoIcon.png">
+            </div>What We Do
+        </div>
+
+        <div class="menuItem">
+            <div class="menuSquare" style="background-color: #e34e5c;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/marketingIcon.png">
+            </div>Comms and Marketing
+        </div>
+
+        <div class="menuItem">
+            <div class="menuSquare" style="background-color: #ff9ed2;">
+                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/fundingIcon.png">
+            </div>Funding
+        </div>    
+    </div>
+    
+    <main>    
+    </main>
+    
+    <!-- **** Footer **** -->
+    <div include-html="./sections/footer.html"></div>
+
+
+    <script src="./js/sections.js"></script>
+    <script>includeHTML();</script>
+
+</body>
+</html>

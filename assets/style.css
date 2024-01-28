@@ -82,7 +82,7 @@ nav {
     grid-auto-flow: row;
     align-items: center;
     background-color: var(--yellow);
-    z-index: 999;
+    z-index: 99;
     padding: 0.5rem;
 }
 
@@ -222,7 +222,7 @@ nav {
   }
   
   .fa-main-bars:hover {
-      content: url("./media/toggleIcon_white.svg");
+      content: url("./media/toggleIcon_grey.svg");
   }
 
 
@@ -493,3 +493,4 @@ f.footer-social-amoeba-path-landingPage {
     }
 }
 */
+
