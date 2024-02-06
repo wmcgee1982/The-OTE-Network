@@ -1,9 +1,6 @@
-/* *** The OTE Network Page *** 
-*** *** 
-*** *** 
-*** *** */
+/* *** OTE Network CSS *** 
 
-/* *** Menu Flexbox *** */
+/* *** OTE Sub-Menu *** */
 .menuFlexbox {
     display: flex;
     flex-flow: row wrap;
@@ -21,7 +18,6 @@
     border-radius: 0.1rem;
     margin-bottom: 1rem;
     box-shadow: 1px 1px 10px -5px var(--darkGrey);
-    transition: 1s all;
     border-radius: 5%;
 }
 
@@ -43,12 +39,19 @@
     text-align: center;
 }
 
+.menuItemCurrent a {
+    text-decoration: none;
+}
+
+.menuItem a {
+    text-decoration: none;
+}
+
 .menuItem:hover 
 .menuSquare {
     cursor: pointer;
     transition: 0.3s all;
     border-radius: 50%;
-    transition-delay: 0s;
     rotate: 360deg;
 }
 
@@ -62,7 +65,6 @@
     cursor: pointer;
     transition: 0.3s all;
     border-radius: 50%;
-    transition-delay: 0s;
     rotate: 360deg;
 }
 
@@ -76,7 +78,8 @@
 .informationPanel {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    column-gap: 0.1rem;
     padding: 1rem 0rem 4rem 0rem;
 }
 
@@ -85,9 +88,10 @@
 .sideMenuPanel {
     display: flex;
     flex-flow: column wrap;
-    flex: 0.15;
+    flex: 0.4;
     border-right: solid 0.1rem var(--mediumGrey);
     padding: 1rem 1rem 1rem 0rem;
+    max-width: 175px;
 }
 
 .sideMenuPanel h5 {
@@ -103,6 +107,11 @@
 .sideMenuPanel li {
     padding-bottom: 1rem;
     font-weight: 500;
+    text-decoration: none;
+}
+
+.sideMenuPanel li a {
+    text-decoration: none;
 }
 
 .sideMenuPanel ul :hover {
@@ -158,18 +167,68 @@
 .mainInfoPanel {
     display: flex;
     flex-flow: column wrap;
-    flex: 0.4;
+    flex: 0.6;
     margin-top: 0.1rem;
+    min-width: 500px;
+}
+
+.mainInfoPanel-people {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0.935;
+    margin-top: 0.1rem;
+    min-width: 500px;
 }
 
 .welcomeText {
     flex-flow: column nowrap;
 }
 
+.mainInfoPanel-people h3 {
+    color: var(--softNavy);
+}
+
+.mainInfoPanel h3 {
+    color: var(--softNavy);
+}
+
+.mainInfoPanel-people h6 {
+    color: var(--softNavy);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.mainInfoPanel h6 {
+    color: var(--softNavy);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
 .welcomeText ul {
     font-style: italic;
 }
 
+.mainInfoPanel-people li {
+    font-weight: 500;
+}
+
+.welcomeText-governance p {
+    margin-top: 0;
+}
+
+.mainInfoPanel-people p {
+    margin-top: 0;
+}
+
+.welcomeText a {
+    color: var(--softNavy);
+    text-decoration: none;
+}
+
+.welcomeText a:hover {
+    filter: none;
+    text-decoration: underline;
+}
 
 /* *** *** Info Cards *** *** */
 .infoCards {
@@ -181,12 +240,30 @@
     margin: 0.5rem 0rem;
 }
 
+.infoCards-what-we-do {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 0.2rem;
+    box-shadow: 5px 5px 10px -10px var(--darkGrey);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    background-color: var(--softNavy);
+}
+
+.infoCards-what-we-do p {
+    color: var(--white);
+}
+
+.infoCards-what-we-do h6 {
+    color: var(--white);
+}
 
 /* *** *** News Panel *** *** */
 .newsPanel {
     display: flex;
     flex-flow: column wrap;
-    flex: 0.35;
+    flex: 0.3;
+    min-width: 400px;
 }
 
 .newsPanel h3 {
@@ -205,6 +282,16 @@
     margin-bottom: 1rem;
 }
 
+.newsPanelCard-evenpadding {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 10px -10px var(--darkGrey);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 .newsPanelCard:hover {
     filter: brightness(90%);
     cursor: help;
@@ -216,6 +303,41 @@
     line-height: 1.2rem; 
     font-weight: 300; 
     letter-spacing: 1.2px;
+}
+
+.newsPanelCard-evenpadding p {
+    font-size: 14px;
+    line-height: 1.2rem; 
+    font-weight: 300; 
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+}
+
+.newsPanelCard-evenpadding h6 {
+    color: var(--softNavy);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.newsPanelCard-evenpadding ul {
+    list-style: none;
+}
+
+.newsPanelCard-evenpadding li {
+    font-size: 12px;
+    line-height: 1.2rem; 
+    font-weight: 300; 
+    letter-spacing: 1.2px;
+}
+
+.sideMenuPanel li a {
+    text-decoration: none;
+}
+
+.newsPanelCard-evenpadding a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--softNavy);
 }
 
 .newsPanelCardTopLine {
@@ -348,3 +470,29 @@
     position: absolute;
     rotate: 10deg;
 }
+
+/* Trustee People Box */
+.trustee-box-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    padding: 1rem 0rem;
+}
+
+.trustee-box {
+    display: flex;
+    flex-flow: column wrap;
+    width: 48%;
+    height: auto;
+    background-color: var(--offMint);
+    box-shadow: 1px 1px 10px -5px var(--darkGrey);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.trustee-box p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+

@@ -82,6 +82,16 @@
     transition-delay: 0.90ms;
 }
 
+body:has(.fa1-bars:hover)
+.menu-magic-bckground {
+    filter:invert(0%);
+}
+
+body:has(.fa1-bars:hover)
+.magic {
+    opacity: 0;
+}
+
 
 /* *** *** LANDING PAGE - logo *** *** */
 .landingPage-logo-container a {

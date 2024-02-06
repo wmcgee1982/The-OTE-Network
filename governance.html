@@ -19,59 +19,178 @@
 
 <body>
 
-<!-- **** Top Nav **** -->
-<div include-html="./sections/network-nav.html"></div>
+    <!-- **** Top Nav **** -->
+    <div include-html="./sections/network-nav.html"></div>
 
-<!-- **** Nav Wave **** --> 
-<div id="wave-menu-festpg" class="page-wave-menu">
-    <svg class="page-wave-svg-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
-        <path class="page-wave-path-menu" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
-    </svg>
-</div>
-
-    <!-- Flexbox Menu -->
-    <div class="menuFlexbox">
-        <div class="menuItem">
-            <a href="./network-home.html">
-            <div class="menuSquare" style="background-color: #4ee3d6;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/homeIcon.png">
-            </div>OTE Network Home</a>
-        </div>
-
-        <div class="menuItemCurrent">
-            <a href="./governance.html">
-            <div class="menuSquare" style="background-color: #018499;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/governanceIcon.png">
-            </div>Governance</a>
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #b9d08d;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/membersIcon.png">
-            </div>People
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #fcc904;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/whatWeDoIcon.png">
-            </div>What We Do
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #e34e5c;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/marketingIcon.png">
-            </div>Comms and Marketing
-        </div>
-
-        <div class="menuItem">
-            <div class="menuSquare" style="background-color: #ff9ed2;">
-                <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/fundingIcon.png">
-            </div>Funding
-        </div>    
+    <!-- **** Nav Wave **** --> 
+    <div id="wave-menu-festpg" class="page-wave-menu">
+        <svg class="page-wave-svg-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="page-wave-path-menu" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+        </svg>
     </div>
+
+        <!-- Flexbox Menu -->
+        <div class="menuFlexbox">
+            <div class="menuItem">
+                <a href="./network-home.html">
+                <div class="menuSquare" style="background-color: #4ee3d6;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/homeIcon.png">
+                </div>OTE Network Home</a>
+            </div>
+
+            <div class="menuItemCurrent">
+                <a href="./governance.html">
+                <div class="menuSquare" style="background-color: #018499;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/governanceIcon.png">
+                </div>Governance</a>
+            </div>
+
+            <div class="menuItem">
+                <a href="./people.html">
+                <div class="menuSquare" style="background-color: #b9d08d;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/membersIcon.png">
+                </div>People</a>
+            </div>
+
+            <div class="menuItem">
+                <a href="./what-we-do.html">
+                <div class="menuSquare" style="background-color: #fcc904;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/whatWeDoIcon.png">
+                </div>What We Do</a>
+            </div>
+
+            <div class="menuItem">
+                <div class="menuSquare" style="background-color: #e34e5c;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/marketingIcon.png">
+                </div>Comms and Marketing
+            </div>
+
+            <div class="menuItem">
+                <div class="menuSquare" style="background-color: #ff9ed2;">
+                    <img style="height: 50px; width: 50px; opacity: 0.6;" src="./assets/media/fundingIcon.png">
+                </div>Funding
+            </div>    
+        </div>
+        
+        <main>  
+            <!-- **** Information Panel **** -->
+            <section class="informationPanel">
+
+                <div include-html="./sections/network-side-nav.html"></div>
+
+                <!-- **** Main Information Panel **** -->
+                <article class="mainInfoPanel">
+                    <div class="welcomeText welcomeText-governance">
+                        <h3>Governance</h3>
+                        <p>Out There Exeter is a Charitable Incorporated Organisation (CIO) that has been
+                            incorporated under the Charities Act 2006 and has its own legal identity and is
+                            governed accordingly. Out There Exeter's charity registration number is: XXXXXXXX
+                        </p>
+                        <h6>Governance Structure</h6>
+                        <p>Out There Exeter has put in place a governance structure that serves as the foundation upon which Out There Exeter
+                            operates. It defines the roles and responsibilities within the charity,
+                            establishing a framework for decision-making and strategic direction. Ultimately, the
+                            Trustees bear the responsibility for ensuring that Out There Exeter adheres to this
+                            framework and upholds its commitment to its mission, purpose, and goals. You can understand more about
+                            our structure by reading the charity constitution and by taking a look at our <a href="./people.html">People</a> page. 
+                        </p>
+                        <h6>Decision-Making</h6>
+                        <p>The charity's decision-making process, outlined in the Standard Operating
+                            Procedures (SOPs), fosters transparency, accountability, and gives clarity for
+                            beneficiaries, stakeholders, and regulators. Guided by the bylaws and the
+                            constitution, Trustees will make informed decisions collectively, grounded in
+                            evidence and good judgment.
+                        </p>
+                        <h6>Out There Exeter Constitution</h6>
+                        <p>The Out There Exeter constitution is a governing document, articles of association,
+                            or memorandum of association, that sets out the rules for running Out There Exeter.
+                            Our constitution helps to ensure that our organisation is run in a fair and transparent
+                            way, that protects the interests of our purpose and stakeholders.
+                        </p>
+                        <h6>Governance Code</h6>
+                        <p>Good governance is essential for the charity to achieve its goals and comply with
+                            laws and regulations. The charity is committed to the principles of the governance
+                            code endorsed by the Charity Commission, and it adheres to the Commission's
+                            Trustee Guidance, ensuring the highest standards of accountability and
+                            transparency.
+                        </p>
+                        <ul>
+                        <li><a href="https://www.charitygovernancecode.org/en" target="_blank">Governance Code</a></li>
+                        <li><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1171397/CC3_feb20.pdf" target="_blank">The essential trustee: what you need to know, what you need to do</a></P> 
+                        </li>  </ul>
+                        <h6>Governance and Bylaw Documents</h6>
+                        <p>The bylaw documents are crucial components that define and guide the operation of
+                            Out There Exeter. These documents serve as the foundation for the charity's
+                            structure, objectives, and management practices, ensuring that Out There Exeter is
+                            run effectively and in accordance with its charitable purposes.
+                        </p>
+                        <h6>Standing Operating Procedures (SOPs)</h6>
+                        <p>Standard Operating Procedures (SOPs) serve as the foundations of the charity's
+                            operations, ensuring consistency, quality, and adherence to its policies.
+                            SOPs will be reviewed and revised annually to ensure they remain effective, or as
+                            needed to reflect changes in the charity's strategies or the regulatory environment.
+                            Failure to comply with SOPs may result in investigation and disciplinary action,
+                            up to and including termination of role or restricted involvement with the charity.
+                        </p>
+                </div>
+                </article>
+
+                <!-- **** Charity News Updates **** -->
+                <aside class="newsPanel">
+                    <!-- **** News Items 1 **** -->
+                    <div class="newsPanelCard-evenpadding">
+                        <h6>Governance and Bylaw Documents</h6>
+
+                            <p><b>By Laws</b></p>
+                                <ul>
+                                    <li><a href="./assets/files/Out_There_Exeter_Constitution_18122023.pdf" target="_blank">Out There Exeter Constitution</a></li>
+                                    <li><a href="./assets/files/Purpose, Mission, Objectives, and Aims and Goals v1.6 17122023.pdf" target="_blank">Purpose, Mission, Objectives, and Aims and Goals</a></li>
+                                </ul>
+                     
+                          
+                            <p><b>Policies</b></p>
+                            <ul>
+                                <li><a href="./assets/files/SOP 001_Conflict of Interest_v1.1_FINAL_01122023.docx" target="_blank">Conflict of Interest</a></li>
+                                <li><a href="./assets/files/SOP 002_Fundraising_v1.1_FINAL_01122023.docx" target="_blank">Fundraising</a></li>
+                                <li><a href="./assets/files/SOP 003_Financial Controls_v1.1_FINAL_01122023.docx" target="_blank">Financial Controls</a></li>
+                                <li><a href="./assets/files/SOP 004_Expenses and Reimbursement_v1.1_FINAL_01122023.docx" target="_blank">Expenses and Reimbursement</a></li>
+                                <li><a href="./assets/files/SOP 005_Risk Management_v1.1_FINAL_01122023.docx" target="_blank">Risk Management</a></li>
+                                <li><a href="./assets/files/SOP 006_Data and Privacy_v1.1_FINAL_01122023.docx" target="_blank">Data and Privacy</a></li>
+                                <li><a href="./assets/files/SOP 007_Communications, Public Relations and Marketing_v1.1_FINAL_01122023.docx" target="_blank">Communications, Public Relations and Marketing</a></li>
+                                <li><a href="./assets/files/SOP 008_Strategic Partnership_v1.1_FINAL_01122023.docx" target="_blank">Strategic Partnership</a></li>
+                                <li><a href="./assets/files/SOP 009_Volunteers and Employment_v1.1_FINAL_01122023.docx" target="_blank">Volunteers and Eployment</a></li>
+                                <li><a href="./assets/files/SOP 010_Safeguarding_v1.1_FINAL_01122023.docx" target="_blank">Safeguarding</a></li>
+                                <li><a href="./assets/files/SOP 011_Health and Safety_v1.1_FINAL_01122023.docx" target="_blank">Health and Safety</a></li>
+                                <li><a href="./assets/files/SOP 012_Values and Principles_v1.1_FINAL_01122023.docx" target="_blank">Values and Principles</a></li>
+                                <li><a href="./assets/files/SOP 013_Behaviour and Conduct_v1.1_FINAL_01122023.docx" target="_blank">Behavior and Conduct</a></li>
+                                <li><a href="./assets/files/SOP 014_Complaints and Disputes_v1.1_FINAL_01122023.docx" target="_blank">Complaints and Disputes</a></li>
+                            </ul>
+
+                            <p><b>Terms and Conditions</b></p>
+                            <ul>
+                                <li><a href="./assets/files/Trustees_T&Cs_v1.1_FINAL_01122023.docx" target="_blank">Trustee T&Cs</a></li>
+                                <li><a href="./assets/files/Membership_T&Cs_v1.1_FINAL_01122023.docx" target="_blank">Membership T&Cs</a></li>
+                                <li><a href="./assets/files/Committee_T&Cs_v1.1_FINAL_01122023.docx" target="_blank">Committee T&Cs</a></li>
+                            </ul>
+                   
+                    </div>
+
+
+                    <div class="newsPanelCard-evenpadding">
+                        <h6>Past Meeting Minutes</h6>
+
+                            <p><b>General Meetings</b></p>
+                                <ul>
+                                    <li><a href="./assets/files/2023_10_23 - Exeter Queer Festival Meeting Minutes.pdf" target="_blank">14th November 2024</a></li>
+                                    <li><a href="./assets/files/2023_10_23 - Exeter Queer Festival Meeting Minutes.pdf" target="_blank">23rd October 2024</a></li>
+                                    <li><a href="./assets/files/2023_09_19 - Exeter Queer Festival Meeting Minutes.pdf" target="_blank">19th Setpember 2023</a></li>
+                                    <li><a href="./assets/files/2023_09_07 - Exeter Queer Festival Meeting Minutes.pdf" target="_blank">7th September 2023</a></li>
+                                 </ul>
+                    </div>
+                </aside>
+            </section>
     
-    <main>    
-    </main>
+        </main>
     
     <!-- **** Footer **** -->
     <div include-html="./sections/footer.html"></div>
